@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gscbench"
+version = "0.1.0"
+description = "A graph similarity computation benchmark framework."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "numpy>=1.21,<2.0",
+    "networkx>=2.8,<3.0",
+    "scipy>=1.8",
+    "pyyaml>=6.0",
+    "huggingface_hub>=0.34,<1.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["gscbench*"]

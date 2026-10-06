@@ -1,0 +1,3 @@
+gscbench_root_dir: datasets
+hf_repo_id: ush3r/GSCbench
+hf_revision: main

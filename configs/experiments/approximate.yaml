@@ -1,0 +1,32 @@
+# Evaluation only: Hungarian, VJ, Beam, FGWAlign; split seeds 1729, 3407, 9679.
+experiment_type: approximate_evaluation
+dataset_name: null
+dataset_config: configs/datasets/default.yaml
+node_label_encoding: fixed_one_hot
+node_label_dim: 97
+val_ratio: 0.04
+test_ratio: 0.16
+split_seed: 1729
+seed: 0
+output_dir: experiments
+runtime_config:
+  epochs: 0
+  batch_size: 128
+  gradient_accumulation_steps: 1
+  learning_rate: 0.001
+  weight_decay: 0.0
+  device: cpu
+  params:
+    criterion: mse
+    monitor: mse
+    loss: mse
+    num_iters: 100
+    warmup: 10
+    eval_batch_size: 256
+    log_interval: 1
+    save_best: false
+    load_best_at_end: false
+    early_stopping: true
+    early_stopping_patience: 50
+    early_stopping_min_delta: 0.0
+    verbose: true

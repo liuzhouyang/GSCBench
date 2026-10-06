@@ -1,0 +1,12 @@
+numpy>=1.21,<3
+networkx>=2.8,<4
+scipy>=1.8
+PyYAML>=6
+huggingface_hub>=0.34,<1
+POT>=0.9
+lap>=0.5
+torch-geometric==2.6.1
+torch-scatter==2.1.2
+torch-sparse==0.6.18
+torch-cluster==1.6.3
+torch-spline-conv==1.2.2
