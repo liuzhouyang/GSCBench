@@ -1,0 +1,12 @@
+target_mode: ged
+normalize_target: true
+gnn_operator: rggc
+k: 8
+pool: multi
+use_pe: false
+pe_dim: 16
+hidden_dim: 64
+tensor_neurons: 16
+reduction: 2
+dropout: 0.0
+

@@ -1,0 +1,9 @@
+target_mode: ged
+normalize_target: true
+filters_1: 64
+filters_2: 32
+filters_3: 16
+tensor_neurons: 16
+bins: 16
+bottle_neck_neurons: 16
+histogram: true

@@ -1,0 +1,32 @@
+target_mode: ged
+normalize_target: true
+gcn_size:
+  - 128
+  - 64
+  - 32
+fix_size: 54
+resize_mode: bilinear
+align_corners: true
+conv_kernel_size:
+  - 25
+  - 10
+  - 4
+  - 2
+conv_pool_size:
+  - 3
+  - 3
+  - 3
+  - 2
+conv_out_channels:
+  - 16
+  - 32
+  - 64
+  - 128
+linear_size:
+  - 256
+  - 128
+  - 64
+  - 32
+  - 16
+  - 8
+  - 4

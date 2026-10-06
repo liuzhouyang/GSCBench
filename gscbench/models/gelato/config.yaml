@@ -1,0 +1,12 @@
+target_mode: ged
+normalize_target: false
+hidden_dim: 128
+num_layers: 5
+dropout: 0.0
+node_cost: 1.0
+edge_cost: 1.0
+inference_branches: 1
+value_loss: null
+value_loss_weight: 0.0
+link_loss: bce
+link_loss_weight: 1.0

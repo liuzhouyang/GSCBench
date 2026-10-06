@@ -1,0 +1,155 @@
+default:
+  target_mode: ged
+  normalize_target: false
+  data_mode: equal
+  training:
+    device: cpu
+    dropout: 0.0
+    learning_rate: 0.001
+    weight_decay: 0.0005
+    num_epochs: 20000
+    seed: 0
+    patience: 100
+    sinkhorn_temp: 0.1
+    sinkhorn_noise: 0.0
+  dataset:
+    one_hot_dim: 1
+    max_node_set_size: 20
+    max_edge_set_size: 23
+    node_ins_cost: 1.0
+    node_del_cost: 1.0
+    node_rel_cost: 0.0
+    edge_ins_cost: 1.0
+    edge_del_cost: 1.0
+    edge_rel_cost: 0.0
+  model:
+    name: GRAPHEDX_no_xor
+    classPath: models.graphedx
+    LAMBDA: 1.0
+    edge_scale: 1
+    use_max: false
+    use_second_sinkhorn: true
+    use_second_sinkhorn_log: false
+    use_h_hp_node: false
+    use_m_ms_edge: false
+  gmn:
+    filters_3: 10
+    GMN_NPROPLAYERS: 5
+    variant: shallow
+
+xor_on_edge:
+  target_mode: ged
+  normalize_target: false
+  data_mode: equal
+  training:
+    device: cpu
+    dropout: 0.0
+    learning_rate: 0.001
+    weight_decay: 0.0005
+    num_epochs: 20000
+    seed: 0
+    patience: 100
+    sinkhorn_temp: 0.1
+    sinkhorn_noise: 0.0
+  dataset:
+    one_hot_dim: 1
+    max_node_set_size: 20
+    max_edge_set_size: 23
+    node_ins_cost: 1.0
+    node_del_cost: 1.0
+    node_rel_cost: 0.0
+    edge_ins_cost: 1.0
+    edge_del_cost: 1.0
+    edge_rel_cost: 0.0
+  model:
+    name: GRAPHEDX_xor_on_edge
+    classPath: models.graphedx
+    LAMBDA: 1.0
+    edge_scale: 1
+    use_max: false
+    use_second_sinkhorn: false
+    use_second_sinkhorn_log: false
+    use_h_hp_node: false
+    use_m_ms_edge: false
+  gmn:
+    filters_3: 10
+    GMN_NPROPLAYERS: 5
+    variant: shallow
+
+xor_on_node:
+  target_mode: ged
+  normalize_target: false
+  data_mode: equal
+  training:
+    device: cpu
+    dropout: 0.0
+    learning_rate: 0.001
+    weight_decay: 0.0005
+    num_epochs: 20000
+    seed: 0
+    patience: 100
+    sinkhorn_temp: 0.1
+    sinkhorn_noise: 0.0
+  dataset:
+    one_hot_dim: 1
+    max_node_set_size: 20
+    max_edge_set_size: 23
+    node_ins_cost: 1.0
+    node_del_cost: 1.0
+    node_rel_cost: 0.0
+    edge_ins_cost: 1.0
+    edge_del_cost: 1.0
+    edge_rel_cost: 0.0
+  model:
+    name: GRAPHEDX_xor_on_node
+    classPath: models.graphedx
+    LAMBDA: 1.0
+    edge_scale: 1
+    use_max: false
+    use_second_sinkhorn: false
+    use_second_sinkhorn_log: false
+    use_h_hp_node: true
+    use_m_ms_edge: true
+  gmn:
+    filters_3: 10
+    GMN_NPROPLAYERS: 5
+    variant: shallow
+
+dual_xor:
+  target_mode: ged
+  normalize_target: false
+  data_mode: equal
+  training:
+    device: cpu
+    dropout: 0.0
+    learning_rate: 0.001
+    weight_decay: 0.0005
+    num_epochs: 20000
+    seed: 0
+    patience: 100
+    sinkhorn_temp: 0.1
+    sinkhorn_noise: 0.0
+  dataset:
+    one_hot_dim: 1
+    max_node_set_size: 20
+    max_edge_set_size: 23
+    node_ins_cost: 1.0
+    node_del_cost: 1.0
+    node_rel_cost: 0.0
+    edge_ins_cost: 1.0
+    edge_del_cost: 1.0
+    edge_rel_cost: 0.0
+  model:
+    name: GRAPHEDX_Dual_xor
+    classPath: models.graphedx
+    LAMBDA: 1.0
+    edge_scale: 1
+    use_max: false
+    use_second_sinkhorn: false
+    use_second_sinkhorn_log: false
+    use_h_hp_node: true
+    use_m_ms_edge: true
+  gmn:
+    filters_3: 10
+    GMN_NPROPLAYERS: 5
+    variant: shallow

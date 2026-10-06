@@ -1,0 +1,24 @@
+target_mode: ged
+normalize_target: false
+value_loss_weight: 0.0
+value_loss: mse
+hidden_dim:
+  - 128
+  - 64
+  - 32
+  - 32
+  - 32
+  - 32
+d_hidden_dim:
+  - 128
+  - 64
+  - 32
+diffusion_steps: 1000
+inference_diffusion_steps: 10
+tau: 1.0
+gumbel_iteration: 5
+unsupervised_approach: BPR
+topk_approach: parallel
+test_k: 1
+num_delta_graphs: 100
+delta_graph_cutoff: 10

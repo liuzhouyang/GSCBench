@@ -1,0 +1,10 @@
+target_mode: ged
+normalize_target: true
+dropout: 0.5
+gcn_size:
+  - 128
+  - 64
+  - 32
+distance_type: negative_dot
+use_pairnorm: false
+assignment_workers: 0

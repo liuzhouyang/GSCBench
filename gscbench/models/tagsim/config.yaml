@@ -1,0 +1,8 @@
+target_mode: ged
+normalize_target: true
+tensor_neurons: 16
+bottle_neck_neurons: 16
+component_target_mode: ged
+component_normalize_target: true
+component_loss: none
+component_loss_weight: 0.0

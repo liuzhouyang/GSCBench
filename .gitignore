@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.gscbench-runtime/
+experiments/
+results/
+/datasets/
+*.egg-info/
+build/
+dist/

@@ -1,0 +1,22 @@
+filters_1: 128
+filters_2: 64
+filters_3: 32
+tensor_neurons: 16
+bottle_neck_neurons: 16
+bottle_neck_neurons_2: 8
+bottle_neck_neurons_3: 4
+hidden_dim: 16
+dropout: 0.5
+gnn_operator: gin
+target_mode: ged
+normalize_target: true
+value_loss: null
+dataset_overrides:
+  aids:
+    value_loss_weight: 10.0
+  linux:
+    value_loss_weight: 10.0
+  imdb:
+    value_loss_weight: 1.0
+mapping_loss: fixed_bce
+mapping_loss_weight: 1.0

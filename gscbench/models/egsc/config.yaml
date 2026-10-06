@@ -1,0 +1,23 @@
+teacher:
+  gnn_operator: gin
+  teacher_gnn_operator: gin
+  filters_1: 64
+  filters_2: 32
+  filters_3: 16
+  bottle_neck_neurons: 16
+  dropout: 0.0
+  kd_mode: l1
+  kd_loss_weight: 10.0
+  reconstruction_loss_weight: 1.0
+
+kd:
+  gnn_operator: gin
+  teacher_gnn_operator: gin
+  filters_1: 64
+  filters_2: 32
+  filters_3: 16
+  bottle_neck_neurons: 16
+  dropout: 0.0
+  kd_mode: l1
+  kd_loss_weight: 10.0
+  reconstruction_loss_weight: 1.0

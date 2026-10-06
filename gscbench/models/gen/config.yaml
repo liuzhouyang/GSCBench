@@ -1,0 +1,20 @@
+target_mode: ged
+normalize_target: false
+value_loss: huber
+hidden_dim: 64
+output_dim: 32
+num_layers: 5
+layer_type: GIN
+skip_connection: identity
+activation: ReLU
+norm: layer
+dropout: 0.0
+cost_injection: false
+prop: true
+impact: true
+operation_cost:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0

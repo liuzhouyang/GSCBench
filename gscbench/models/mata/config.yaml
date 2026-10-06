@@ -1,0 +1,30 @@
+filter_1: 64
+filter_2: 64
+filter_3: 64
+tensor_neurons: 16
+bottle_neck_neurons: 16
+topk: 5
+loss_type: 2
+dropout: 0.0
+learning_rate: 0.001
+weight_decay: 0.0005
+random_walk_step: 16
+max_degree: 12
+tasks: 3
+sinkhorn: true
+nonstruc: false
+beam: false
+gnn_operator: gcn
+target_mode: ged
+normalize_target: true
+value_loss: mse
+value_loss_weight: 50.0
+dataset_overrides:
+  aids:
+    topk: 4
+  imdb:
+    topk: 6
+    max_degree: 40
+  cancer:
+    topk: 3
+    max_degree: 18

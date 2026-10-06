@@ -1,0 +1,15 @@
+target_mode: ged
+normalize_target: true
+filters_1: 128
+filters_2: 64
+filters_3: 32
+tensor_neurons: 8
+bottle_neck_neurons: 4
+dropout: 0.5
+gnn_operator: gcn
+histogram: false
+bins: 16
+beamsize: false
+beam_size: 100
+value_loss: mse
+value_loss_weight: 1.0
